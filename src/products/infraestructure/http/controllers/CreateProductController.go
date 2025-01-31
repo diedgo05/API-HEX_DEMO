@@ -6,11 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	// "github.com/go-playground/validator/v10"
 )
-
-
-// var validate *validator.Validate
 
 type CreateProductController struct {
 	uc *application.CreateProduct
@@ -37,9 +33,4 @@ func (ctrl *CreateProductController) Run(c *gin.Context) {
 		c.JSON(http.StatusCreated, gin.H{"mensaje":"Producto creado"})
 		c.JSON(http.StatusOK, products)
 	}
-
-		// c.JSON(http.StatusOK, products)
-
-	
-	// c.JSON(http.StatusOK, products)
 }

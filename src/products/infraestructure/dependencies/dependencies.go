@@ -16,7 +16,6 @@ func Init() {
 		fmt.Println("Error de servidor")
 		return
 	}
-
 	// defer db.Close()
 	mySQL = *infraestructure.NewMySQL(db)
 }
